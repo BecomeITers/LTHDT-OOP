@@ -25,27 +25,30 @@ Phương thức:
 giảng dạy môn học()
 xem lịch dạy()
 
-3. Lớp Môn học
+3. Lớp Học phần
 Thuộc tính:
-Tên môn học
-Số tín chỉ
-Số tiết
-Mã môn học
-Giảng viên phụ trách (liên kết với lớp Giảng viên)
+  Tên học phần
+  Mã học phần
+  Số tiết
+  Tiết bắt đầu
+  Tiết kết thúc
+  Phòng học được cấp
+  Giảng viên phụ trách (-> lớp “GiangVien”)
 Phương thức:
-xem thông tin môn học()
-xem lịch dạy()
+ Phương thức nhập từ bàn phím
+ Phương thức in thông tin
 
 4. Lớp Thời khóa biểu
 Thuộc tính:
-Ngày
-Thời gian bắt đầu
-Thời gian kết thúc
-Phòng học
-Danh sách môn học (liên kết với lớp Môn học)
+Số lượng lớp học phần
+   Tuần học (?)
+   Ngày bắt đầu, kết thúc tuần học (?)
+   Danh sách các lớp học phần (-> lớp “HocPhan”)
+   Danh sách ngày học đặc biệt (cùng lớp học phần đó nhưng học ngày khác, tiết khác ở 1 tuần nào đó) [dự kiến]
 Phương thức:
-xem thời khóa biểu()
-thêm môn học vào thời khóa biểu()
+Phương thức nhập TKB từ bàn phím (hay nhập danh sách môn học)
+Thêm học phần vào thời khóa biểu()
+Phương thức xóa lớp học phần trong TKB
 Có thể cân nhắc thêm lớp "Lịch học" riêng biệt dành cho sinh viên và giảng viên để dễ quản lý.
 Quản lý xung đột thời gian:
 Kiểm tra xem sinh viên hoặc giảng viên có bị trùng lịch không.
