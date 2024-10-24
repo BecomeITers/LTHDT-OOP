@@ -10,8 +10,10 @@ Phương thức:
 + khởi tạo: 
   -> ThoiKhoaBieu()
   -> ThoiKhoaBieu(ngayBatDauInput : DateTime, ngayKetThucInput : DateTime, tuanHocInput : int, danhSachHocPhanInput : List<HocPhan>)
++ NhapDanhSachHocPhan() >> (void)
 + NhapTKB() >> (void)
   // Nhập thời khóa biểu của 1 TUẦN
+  // Có gọi lại phương thức NhapDanhSachHocPhan()
 + ChinhSuaTKB() >> (void)
   // Chỉnh sửa TKB của 1 TUẦN
 + InTKB() >> (void)
