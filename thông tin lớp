@@ -1,0 +1,34 @@
+lớp "ThoiKhoaBieu":
+Thuộc tính:
+- ngayBatDau (DateTime) 
+- ngayKetThuc (DateTime)
+- tuanHoc (int)
+- danhSachHocPhan (List<HocPhan>)
+- Danh sách ngày học đặc biệt (cùng lớp học phần đó nhưng học ngày khác, tiết khác ở 1 tuần nào đó) [dự kiến]
+
+Phương thức:
++ khởi tạo: 
+  -> ThoiKhoaBieu()
+  -> ThoiKhoaBieu(ngayBatDauInput : DateTime, ngayKetThucInput : DateTime, tuanHocInput : int, danhSachHocPhanInput : List<HocPhan>)
++ NhapTKB() >> (void)
+  // Nhập thời khóa biểu của 1 TUẦN
++ ChinhSuaTKB() >> (void)
+  // Chỉnh sửa TKB của 1 TUẦN
++ InTKB() >> (void)
+  // In TKB của 1 TUẦN
++ ...
+
+lớp "QuanLyTKB":
+Thuộc tính:
+- DSTKB (List<ThoiKhoaBieu>)
+
+Phương thức:
++ NhapDSTKB() >> (void)
+  // Nhập danh sách TKB của 1 NĂM HỌC
++ InTKBTheoTuan(tuanHocInput : array) >> (void)
+  // In danh sách TKB các tuần đã chọn trong mảng trong 1 NĂM HỌC
++ XoaDSTKB(tuanHocInput : array) >> (void)
+  // Xóa TKB các tuần đã chọn trong mảng trong 1 NĂM HỌC
++ ChinhSuaDSTKB() >> (void)
+  // Chỉnh sửa TKB, chạy trong vòng lặp while sửa TKB từng tuần được nhập, cho đến khi người dùng nhập 1 kí tự nào đó để kết thúc vòng lặp
++ ...
