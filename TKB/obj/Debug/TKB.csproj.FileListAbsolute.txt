@@ -1,0 +1,7 @@
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\nguon\TKB\obj\Debug\TKB.csproj.AssemblyReference.cache
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\nguon\TKB\obj\Debug\TKB.csproj.CoreCompileInputs.cache
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\nguon\TKB\bin\Debug\TKB.exe.config
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\nguon\TKB\bin\Debug\TKB.exe
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\nguon\TKB\bin\Debug\TKB.pdb
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\nguon\TKB\obj\Debug\TKB.exe
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\nguon\TKB\obj\Debug\TKB.pdb
