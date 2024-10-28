@@ -16,8 +16,9 @@ Phương thức:
   // Có gọi lại phương thức NhapDanhSachHocPhan()
 + ChinhSuaTKB() >> (void)
   // Chỉnh sửa TKB của 1 TUẦN
-+ InTKB() >> (void)
++ InTKB() >> (int)
   // In TKB của 1 TUẦN
+  // * Đọc file ThoiKhoaBieu.cs trong thư mục upload để biết phương thức trả về gì
 + ...
 
 lớp "QuanLyTKB":
