@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -56,9 +57,9 @@ namespace TKB
             set { phongHoc = value; }
         }
 
-        //-------
-        // method
-        //-------
+        //--------
+        // methods
+        //--------
         public int InThongTin(int y, int x, int DoRongOInput)
         {
             List<List<string>> DanhSachTu = new List<List<string>>();
@@ -122,6 +123,16 @@ namespace TKB
 
             // tra ve tong so hang can thiet de in o hoc phan nay
             return i;
+        }
+
+        public string InThongTinDS()
+        {
+            return "";
+        }
+
+        public void ChinhSuaHocPhan()
+        {
+
         }
     }
 }
