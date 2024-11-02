@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,8 @@ namespace TKB
     {
         static void Main(string[] args)
         {
-            Console.SetBufferSize(1000, 140);
+            Console.SetBufferSize(300, 140);
+            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
 
             HocPhan hp1 = new HocPhan("HP 1", "111", "werf rgf ytre wertghre vghj", "A1", 3, 1, 0);
             HocPhan hp2 = new HocPhan("HP 2", "112", "Giang vien B", "B2", 2, 5, 0);
@@ -23,13 +24,21 @@ namespace TKB
             ThoiKhoaBieu TKB = new ThoiKhoaBieu();
 
             TKB.DanhSachHocPhan = DS_HP;
-            
-            // In test thoi khoa bieu
-            int VTChuot = TKB.InTKB(15);
+            TKB.NgayBatDau = new DateTime(2023, 09, 25);
+            TKB.NgayKetThuc = TKB.NgayBatDau.AddDays(6);
+            TKB.TuanHoc = 1;
+
+            QuanLyTKB QLTKB = new QuanLyTKB();
+
+            QLTKB.NhanBanTuanHoc(TKB);
+
+            QLTKB.LamTrongTKB();
+
+            int VTChuot = QLTKB.InTKBTheoTuan(20);
 
             Console.SetCursorPosition(0, VTChuot);
+
             Console.ReadKey();
         }
     }
 }
-
