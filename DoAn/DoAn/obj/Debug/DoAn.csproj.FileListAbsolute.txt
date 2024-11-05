@@ -1,0 +1,7 @@
+D:\DAI HOC\NAM 2\OOP\LTHDT-OOP\DoAn\DoAn\bin\Debug\DoAn.exe.config
+D:\DAI HOC\NAM 2\OOP\LTHDT-OOP\DoAn\DoAn\bin\Debug\DoAn.exe
+D:\DAI HOC\NAM 2\OOP\LTHDT-OOP\DoAn\DoAn\bin\Debug\DoAn.pdb
+D:\DAI HOC\NAM 2\OOP\LTHDT-OOP\DoAn\DoAn\obj\Debug\DoAn.csproj.AssemblyReference.cache
+D:\DAI HOC\NAM 2\OOP\LTHDT-OOP\DoAn\DoAn\obj\Debug\DoAn.csproj.CoreCompileInputs.cache
+D:\DAI HOC\NAM 2\OOP\LTHDT-OOP\DoAn\DoAn\obj\Debug\DoAn.exe
+D:\DAI HOC\NAM 2\OOP\LTHDT-OOP\DoAn\DoAn\obj\Debug\DoAn.pdb
