@@ -1,0 +1,7 @@
+C:\Documents\MÔN CHUYÊN NGÀNH\HuongDoiTuong\MonHoc\bin\Debug\MonHoc.exe.config
+C:\Documents\MÔN CHUYÊN NGÀNH\HuongDoiTuong\MonHoc\bin\Debug\MonHoc.exe
+C:\Documents\MÔN CHUYÊN NGÀNH\HuongDoiTuong\MonHoc\bin\Debug\MonHoc.pdb
+C:\Documents\MÔN CHUYÊN NGÀNH\HuongDoiTuong\MonHoc\obj\Debug\MonHoc.csproj.AssemblyReference.cache
+C:\Documents\MÔN CHUYÊN NGÀNH\HuongDoiTuong\MonHoc\obj\Debug\MonHoc.csproj.CoreCompileInputs.cache
+C:\Documents\MÔN CHUYÊN NGÀNH\HuongDoiTuong\MonHoc\obj\Debug\MonHoc.exe
+C:\Documents\MÔN CHUYÊN NGÀNH\HuongDoiTuong\MonHoc\obj\Debug\MonHoc.pdb
