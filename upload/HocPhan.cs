@@ -56,7 +56,21 @@ namespace TKB
             get { return phongHoc; }
             set { phongHoc = value; }
         }
-
+        public int TietBatDau
+        {
+            get { return tietBatDau; }
+            set { tietBatDau = value; }
+        }
+        public int SoTiet
+        {
+            get { return soTiet; }
+            set { soTiet = value; }
+        }
+        public string TenHocPhan
+        {
+            get { return tenHocPhan; }
+            set { tenHocPhan = value; }
+        }
         //--------
         // methods
         //--------
@@ -127,7 +141,7 @@ namespace TKB
 
         public string InThongTinDS()
         {
-            return "";
+            return $"{maHocPhan} ( {tietBatDau} + {soTiet} (-1)";
         }
 
         public void ChinhSuaHocPhan()
