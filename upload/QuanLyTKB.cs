@@ -38,6 +38,9 @@ namespace TKB
         public void NhanBanTuanHoc(ThoiKhoaBieu TKBInput)
         {
             int n;          // bien luu so luong tuan hoc co trong nam hoc
+            ThoiKhoaBieu TKBtuan1 = new ThoiKhoaBieu();
+
+            TKBInput.SaoLuu(TKBtuan1);
 
             Console.Write("Nhap so tuan co trong nam hoc: ");
             while (true)
@@ -57,7 +60,7 @@ namespace TKB
                 break;
             }
 
-            danhSachTKB.Add(TKBInput);
+            danhSachTKB.Add(TKBtuan1);
 
             // so thu tu cua tuan hoc bat dau tu 1 -> ...
             // vi tri tuan hoc trong danh sach bat dau tu 0 -> ...
@@ -252,6 +255,33 @@ namespace TKB
             Console.SetCursorPosition(0, HangSaoLuu);
             Console.Write(">>> Ket thuc in");
             return HangSaoLuu + 1;
+        }
+        // bơ-phẹc
+        public void HuyHocPhan()
+        {
+            string TenHPCanHuy = "";
+            Console.Write("\n>>> Nhap ten hoc phan muon huy: ");
+            TenHPCanHuy =  Console.ReadLine();
+
+            foreach (ThoiKhoaBieu TKBDuyet in danhSachTKB)
+            {
+                TKBDuyet.DanhSachHocPhan.RemoveAll((hp) => hp.TenHocPhan == TenHPCanHuy);
+            }
+        }
+
+        // !!! phuong thuc ThemHocPhan chua duoc test !!!
+        public void ThemHocPhan()
+        {
+            HocPhan HocPhanCanThem = new HocPhan();
+            // nhap thong tin hoc phan can them
+            Console.WriteLine("\n>>> Nhap thong tin hoc phan can them");
+            // phuong thuc nhap hoc phan goi tu lop hoc phan va luu vao doi tuong HocPhanCanThem
+            // HocPhanCanThem.<phuong thuc nhap hoc phan>()
+
+            foreach (ThoiKhoaBieu TKBDuyet in danhSachTKB)
+            {
+                TKBDuyet.DanhSachHocPhan.Add(HocPhanCanThem);
+            }
         }
     }
 }
