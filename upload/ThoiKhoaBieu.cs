@@ -64,9 +64,10 @@ namespace TKB
         //--------
         public void SaoLuu(ThoiKhoaBieu TKBKhac)
         {
-            TKBKhac.ngayBatDau = this.ngayBatDau;
-            TKBKhac.ngayKetThuc = this.ngayKetThuc;
-            TKBKhac.DanhSachHocPhan = new List<HocPhan>(this.danhSachHocPhan);
+            TKBKhac.NgayBatDau = ngayBatDau;
+            TKBKhac.NgayKetThuc = ngayKetThuc;
+            TKBKhac.DanhSachHocPhan = new List<HocPhan>(danhSachHocPhan);
+            TKBKhac.TuanHoc = tuanHoc;
         }
         public void NhapDanhSachHocPhan()
         {
@@ -109,6 +110,7 @@ namespace TKB
             }
             ngayKetThuc = ngayBatDau.AddDays(6);
 
+            /*
             Console.Write("Nhap so thu tu cua tuan hoc: ");
 
             while (true)
@@ -126,6 +128,9 @@ namespace TKB
 
                 break;
             }
+            */
+            // tuan hoc duoc nhap lan dau tien de nhan ban mac dinh la tuan hoc so 1
+            tuanHoc = 1;
 
             NhapDanhSachHocPhan();
         }
@@ -166,7 +171,8 @@ namespace TKB
                 LuaChon = Console.ReadLine();
 
                 // dung vong lap while neu LuaChon khac "1"
-                if (string.Compare(LuaChon, "1", true) != 0) break;
+                if (LuaChon != "1") break;
+                // if (string.Compare(LuaChon, "1", true) != 0) break;
             }
         }
         public string TraVeThu(int x)
@@ -198,7 +204,7 @@ namespace TKB
             //Console.SetCursorPosition(DoRongO + DoRongNuaO, 3); // dat con tro chuot console de in thu hai
             for (int i = 1; i <= 7; i++)
             {
-                // dat con tr chuot console de in cac thu ngay
+                // dat con tro chuot console de in cac thu ngay
                 Console.SetCursorPosition(i * DoRongO + DoRongNuaO, HangInHPInput + 3);
                 Console.Write($"{this.TraVeThu(i)}");
 
@@ -210,7 +216,7 @@ namespace TKB
             Console.WriteLine($"\n{new string('-', DoRongO * 8)}");
 
             // In lich hoc theo tung tiet trong ngay, bat dau tu tiet 1
-            List<HocPhan> DanhSachHPTam = danhSachHocPhan;
+            List<HocPhan> DanhSachHPTam = new List<HocPhan>(danhSachHocPhan);
 
             int HangInHP = HangInHPInput + 5;
             int CotInHP = 0;
@@ -271,6 +277,50 @@ namespace TKB
             // tra ve vi tri hang o cuoi thoi khoa bieu
             return HangInHP;
         }
-        public void KiemTraTrung() { }
+        public int SoSanh(HocPhan HP1, HocPhan HP2)
+        {
+            if (HP1.TietBatDau > HP2.TietBatDau) return 1;
+            return 0;
+        }
+        public void KiemTraTrung()
+        {
+            // danh sach hoc phan tam thoi dung de luu cac hoc phan trong cung ngay
+            List<HocPhan> DanhSachHPTam = new List<HocPhan>();
+            int DuyetThu = 0;
+            int kt = 0;
+
+            while (true)
+            {
+                // dieu kien dung vong lap while
+                if (DuyetThu > 6) break;
+
+                foreach (HocPhan HP in danhSachHocPhan)
+                {
+                    if (HP.MaSoThu == DuyetThu) DanhSachHPTam.Add(HP);
+                }
+
+                // sap xep cac hoc phan tang dan theo tiet bat dau
+                DanhSachHPTam.Sort((hp1, hp2) => SoSanh(hp1, hp2));
+
+                for (int i = 0; i < DanhSachHPTam.Count - 1; i++)
+                {
+                    for (int j = i + 1; j < DanhSachHPTam.Count; j++)
+                    {
+                        if (DanhSachHPTam[i].TietBatDau + DanhSachHPTam[i].SoTiet - 1 >= DanhSachHPTam[j].TietBatDau)
+                        {
+                            Console.WriteLine("\nHoc phan bi trung:");
+                            Console.WriteLine($"!! {DanhSachHPTam[i].InThongTinDS()}");
+                            Console.WriteLine($"!! {DanhSachHPTam[j].InThongTinDS()}");
+                            kt = 1;
+                        }
+                    }
+                }
+
+                DuyetThu++;
+                DanhSachHPTam.Clear();
+            }
+
+            if (kt == 0) Console.WriteLine("\n>>> Khong co hoc phan nao bi trung");
+        }
     }
 }
