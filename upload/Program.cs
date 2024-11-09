@@ -10,14 +10,16 @@ namespace TKB
     {
         static void Main(string[] args)
         {
-            Console.SetBufferSize(300, 140);
+            Console.SetBufferSize(200, 140);
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            //Console.SetWindowSize(200, Console.LargestWindowHeight);
+
 
             HocPhan hp1 = new HocPhan("HP 1", "111", "werf rgf ytre wertghre vghj", "A1", 3, 1, 0);
             HocPhan hp2 = new HocPhan("HP 2", "112", "Giang vien B", "B2", 2, 5, 0);
             HocPhan hp3 = new HocPhan("HP bdfhg rfhj rfhg 234 432", "113", "Giang vien C", "A2", 4, 1, 3);
             HocPhan hp4 = new HocPhan("HP 4", "114", "Giang vien D", "C4", 2, 3, 5);
-            HocPhan hp5 = new HocPhan("HP 4", "114", "Giang vien E", "A1", 2, 3, 5);
+            HocPhan hp5 = new HocPhan("HP 5", "115", "Giang vien E", "A1", 3, 4, 5);
 
             List<HocPhan> DS_HP = new List<HocPhan>() {hp1, hp2, hp3, hp4, hp5};
 
@@ -35,7 +37,13 @@ namespace TKB
             QLTKB.LamTrongTKB();
 
             int VTChuot = QLTKB.InTKBTheoTuan(20);
+            // TKB.KiemTraTrung();
+            Console.SetCursorPosition(0, VTChuot);
 
+            QLTKB.HuyHocPhan();
+
+            VTChuot = QLTKB.InTKBTheoTuan(20);
+            // TKB.KiemTraTrung();
             Console.SetCursorPosition(0, VTChuot);
 
             Console.ReadKey();
