@@ -1,0 +1,7 @@
+C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\bin\Debug\GiangVien&SinhVien.exe.config
+C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\bin\Debug\GiangVien&SinhVien.exe
+C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\bin\Debug\GiangVien&SinhVien.pdb
+C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.csproj.AssemblyReference.cache
+C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.csproj.CoreCompileInputs.cache
+C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.exe
+C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.pdb
