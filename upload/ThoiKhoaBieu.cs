@@ -69,7 +69,7 @@ namespace TKB
             TKBKhac.DanhSachHocPhan = new List<HocPhan>(danhSachHocPhan);
             TKBKhac.TuanHoc = tuanHoc;
         }
-        public void NhapDanhSachHocPhan()
+        private void NhapDanhSachHocPhan()
         {
             // so luong mon hoc can nhap
             int n = 0;      
@@ -92,7 +92,7 @@ namespace TKB
         }
         public void NhapTKB()
         {
-            Console.Write("Nhap ngay bat dau tuan hoc (dd/mm/yyyy): ");
+            Console.Write("\nNhap ngay bat dau tuan hoc (dd/mm/yyyy): ");
             ngayBatDau = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
 
             while (ngayBatDau.DayOfWeek != DayOfWeek.Monday)
@@ -105,30 +105,11 @@ namespace TKB
                 else if (ngayBatDau.DayOfWeek == DayOfWeek.Saturday) Thu = "Thu bay";
                 else if (ngayBatDau.DayOfWeek == DayOfWeek.Sunday) Thu = "Chu nhat";
 
-                Console.Write($"Nhap lai ngay bat dau tuan hoc (nen bat dau tu thu hai, ngay vua nhap la {Thu}): ");
+                Console.Write($"!!! Nhap lai ngay bat dau tuan hoc (nen bat dau tu thu hai, ngay vua nhap la {Thu}): ");
                 ngayBatDau = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
             }
             ngayKetThuc = ngayBatDau.AddDays(6);
 
-            /*
-            Console.Write("Nhap so thu tu cua tuan hoc: ");
-
-            while (true)
-            {
-                try
-                {
-                    tuanHoc = Convert.ToInt32(Console.ReadLine());
-
-                    if (TuanHoc <= 0) throw new Exception();
-                } catch (Exception)
-                {
-                    Console.Write("!! Nhap lai so thu tu tuan hoc: ");
-                    continue;
-                }
-
-                break;
-            }
-            */
             // tuan hoc duoc nhap lan dau tien de nhan ban mac dinh la tuan hoc so 1
             tuanHoc = 1;
 
@@ -140,15 +121,17 @@ namespace TKB
             {
                 // in danh sach mon hoc hien tai cung thong tin mon hoc co trong TKB
                 Console.Write("\nCac mon hoc hien co trong tuan hoc: ");
+                int dem = 1;
                 foreach (HocPhan HPDuyet in DanhSachHocPhan)
                 {
-                    Console.Write($"\n1> {HPDuyet.InThongTinDS()}.");
+                    Console.WriteLine($"\n{dem}> {HPDuyet.InThongTinDS()}.");
+                    dem++;
                 }
 
-                Console.Write("\nCac ki tu khac> Thoat chinh sua.");
+                Console.WriteLine("\nt> Thoat chinh sua.");
 
                 // lua chon cua nguoi dung
-                Console.Write(">>> Ban can chinh sua mon hoc thu (nhap 1 hoac 2 hoac...): ");
+                Console.Write("\n>>> Ban can chinh sua mon hoc nao: ");
                 string LuaChon = Console.ReadLine();
 
                 // phan loai
@@ -167,7 +150,7 @@ namespace TKB
                 DanhSachHocPhan[i - 1].ChinhSuaHocPhan();
 
                 // tiep tuc hoac dung chinh sua
-                Console.Write(">>> Ban co can chinh sua tiep? (nhap 1 neu co, nhap cac ki tu con lai neu khong): ");
+                Console.Write("\n>>> Ban co can chinh sua tiep? (nhap 1 neu co, nhap cac ki tu con lai neu khong): ");
                 LuaChon = Console.ReadLine();
 
                 // dung vong lap while neu LuaChon khac "1"
