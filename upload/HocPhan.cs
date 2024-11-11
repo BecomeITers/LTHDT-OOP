@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,48 +33,238 @@ namespace TKB
             maSoThu = 0;
         }
 
-        public HocPhan(string tenHocPhan_I, string maHocPhan_I, string giangVienPhuTrach_I, string phongHoc_I, int soTiet_I, int tietBatDau_I, int thu_I)
+        public HocPhan(string tenHocPhan_I, string maHocPhan_I, string giangVienPhuTrach_I, string phongHoc_I, int soTiet_I, int tietBatDau_I, int maSoThu_I)
         {
             tenHocPhan = tenHocPhan_I;
-            maHocPhan = tenHocPhan_I;
+            maHocPhan = maHocPhan_I;
             giangVienPhuTrach = giangVienPhuTrach_I;
             phongHoc = phongHoc_I;
             soTiet = soTiet_I;
             tietBatDau = tietBatDau_I;
-            maSoThu = thu_I;
+            maSoThu = maSoThu_I;
         }
 
         //-----------
         // properties
         //-----------
-        public int MaSoThu
-        {
-            get { return maSoThu; }
-            set { maSoThu = value; }
-        }
-        public string PhongHoc
-        {
-            get { return phongHoc; }
-            set { phongHoc = value; }
-        }
-        public int TietBatDau
-        {
-            get { return tietBatDau; }
-            set { tietBatDau = value; }
-        }
-        public int SoTiet
-        {
-            get { return soTiet; }
-            set { soTiet = value; }
-        }
         public string TenHocPhan
         {
             get { return tenHocPhan; }
             set { tenHocPhan = value; }
         }
+
+        public string MaHocPhan
+        {
+            get { return maHocPhan; }
+            set { maHocPhan = value; }
+        }
+
+        public string GiangVienPhuTrach
+        {
+            get { return giangVienPhuTrach; }
+            set { giangVienPhuTrach = value; }
+        }
+
+        public string PhongHoc
+        {
+            get { return phongHoc; }
+            set { phongHoc = value; }
+        }
+
+        public int SoTiet
+        {
+            get { return soTiet; }
+            set { soTiet = value; }
+        }
+
+        public int TietBatDau
+        {
+            get { return tietBatDau; }
+            set { tietBatDau = value; }
+        }
+
+        public int MaSoThu
+        {
+            get { return maSoThu; }
+            set { maSoThu = value; }
+        }
         //--------
         // methods
         //--------
+
+        /// Hàm nhập danh sách học phần
+        public void NhapHocPhan()
+        {
+            Console.Write("Nhap ten hoc phan: ");
+            tenHocPhan = Console.ReadLine();
+
+            Console.Write("Nhap ma hoc phan: ");
+            maHocPhan = Console.ReadLine();
+
+            Console.Write("Nhap giang vien phu trach: ");
+            giangVienPhuTrach = Console.ReadLine();
+
+            Console.Write("Nhap phong hoc: ");
+            phongHoc = Console.ReadLine();
+
+            Console.Write("Nhap tiet bat dau: ");
+            while (true)
+            {
+                try
+                {
+                    tietBatDau = int.Parse(Console.ReadLine());
+
+                    if (tietBatDau < 1 || tietBatDau > 11) throw new Exception();
+                }
+                catch (Exception)
+                {
+                    Console.Write("!!! Nhap lai tiet bat dau: ");
+                    continue;
+                }
+
+                break;
+            }
+
+            Console.Write("Nhap so tiet: ");
+            while (true)
+            {
+                try
+                {
+                    soTiet = int.Parse(Console.ReadLine());
+
+                    int TietKetThuc = tietBatDau + soTiet - 1;
+                    if (TietKetThuc > 11) throw new Exception();
+                }
+                catch (Exception)
+                {
+                    Console.Write("!!! Nhap lai so tiet: ");
+                    continue;
+                }
+
+                break;
+            }
+
+            Console.Write("Nhap thu (0 - hai, 1 - ba, ... 6 - chu nhat): ");
+            while (true)
+            {
+                try
+                {
+                    maSoThu = int.Parse(Console.ReadLine());
+
+                    if (maSoThu < 0 || maSoThu > 6) throw new Exception();
+                }
+                catch (Exception)
+                {
+                    Console.Write("!!! Nhap lai thu ngay trong tuan (0 - hai, 1 - ba, ... 6 - chu nhat): ");
+                    continue;
+                }
+
+                break;
+            }
+        }
+
+        /// Hàm chỉnh sửa học phần
+        public void ChinhSuaHocPhan()
+        {
+            /*
+            if (this != null)
+            {
+                
+            }
+            else
+            {
+                Console.WriteLine("!!! Khong tim thay hoc phan.");
+            }
+            */
+            int kt = 0;
+            while (true)
+            {
+                Console.WriteLine("Thong tin hien tai cua hoc phan:");
+                Console.WriteLine($"1. Ten hoc phan: {tenHocPhan}");
+                Console.WriteLine($"2. Ma hoc phan: {maHocPhan}");
+                Console.WriteLine($"3. Giang vien phu trach: {giangVienPhuTrach}");
+                Console.WriteLine($"4. Phong hoc: {phongHoc}");
+                Console.WriteLine($"5. So tiet: {soTiet}");
+                Console.WriteLine($"6. Tiet bat dau: {tietBatDau}");
+                Console.WriteLine($"7. Ma so thu: {maSoThu}");
+
+                if (kt == 1) break;
+
+                while (true)
+                {
+                    Console.Write("\nNhap so tuong ung voi thong tin can thay doi (nhap '0' de thoat): ");
+                    string luaChon = Console.ReadLine()?.Trim();
+
+                    if (luaChon == "0")
+                    {
+                        kt = 1;
+                        break;
+                    }
+
+                    switch (luaChon)
+                    {
+                        case "1":
+                            Console.Write("Nhap ten hoc phan moi: ");
+                            string tenMoi = Console.ReadLine();
+                            tenHocPhan = tenMoi;
+                            break;
+                        case "2":
+                            Console.Write("Nhap ma hoc phan moi: ");
+                            string maMoi = Console.ReadLine();
+                            maHocPhan = maMoi;
+                            break;
+                        case "3":
+                            Console.Write("Nhap giang vien phu trach moi: ");
+                            string giangVienMoi = Console.ReadLine();
+                            giangVienPhuTrach = giangVienMoi;
+                            break;
+                        case "4":
+                            Console.Write("Nhap phong hoc moi: ");
+                            string phongMoi = Console.ReadLine();
+                            phongHoc = phongMoi;
+                            break;
+                        case "5":
+                            Console.Write("Nhap so tiet moi: ");
+                            if (int.TryParse(Console.ReadLine(), out int soTietMoi))
+                            {
+                                soTiet = soTietMoi;
+                            }
+                            else
+                            {
+                                Console.WriteLine("So tiet khong hop le.");
+                            }
+                            break;
+                        case "6":
+                            Console.Write("Nhap tiet bat dau moi: ");
+                            if (int.TryParse(Console.ReadLine(), out int tietBatDauMoi))
+                            {
+                                tietBatDau = tietBatDauMoi;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Tiet bat dau khong hop le.");
+                            }
+                            break;
+                        case "7":
+                            Console.Write("Nhap ma so thu moi (0 - hai, 1 - ba, ... 6 - chu nhat): ");
+                            if (int.TryParse(Console.ReadLine(), out int maSoThuMoi))
+                            {
+                                maSoThu = maSoThuMoi;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Ma so thu khong hop le.");
+                            }
+                            break;
+                        default:
+                            Console.WriteLine("Lua chon khong hop le.");
+                            break;
+                    }
+                }
+                Console.WriteLine(">>> Da cap nhat thong tin hoc phan.\n");
+            }
+        }
+
         public int InThongTin(int y, int x, int DoRongOInput)
         {
             List<List<string>> DanhSachTu = new List<List<string>>();
@@ -141,12 +332,7 @@ namespace TKB
 
         public string InThongTinDS()
         {
-            return $"{maHocPhan} ( {tietBatDau} + {soTiet} (-1)";
-        }
-
-        public void ChinhSuaHocPhan()
-        {
-
+            return $"Ten hoc phan: {tenHocPhan}, ma hoc phan: {maHocPhan}\nTiet: {tietBatDau} - {tietBatDau + soTiet - 1}, so tiet: {soTiet}";
         }
     }
 }
