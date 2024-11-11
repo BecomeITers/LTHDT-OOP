@@ -148,7 +148,7 @@ namespace TKB
             // chuoi luu ket qua nhap tu ban phim
             string s;
 
-            Console.Write("Nhap cac tuan hoc can in ra man hinh: ");
+            Console.Write(">>> Nhap cac tuan hoc can in ra man hinh: ");
             while (true)
             {
                 s = Console.ReadLine();
