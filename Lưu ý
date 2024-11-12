@@ -1,0 +1,7 @@
+Yêu cầu:
+1. Làm theo nhóm.
+2. Báo cáo theo yêu cầu của Giảng viên
+3. Ngôn ngữ lập trình: C# Console Application
+4. Áp dụng phương pháp Bottom-up, thiết kế chương trình theo hướng đối tượng chứa ít nhất 5 lớp có áp dụng tính đóng gói, đơn kế thừa, đa kế thừa và tính đa hình.
+5. Xây dựng thư viện hổ trợ các chức năng thêm, xoá, sửa dữ liệu và các tiện ích.
+6. Chương trình ứng dụng có sử dụng các thư viện lớp đã thiết kế và các menu người dùng lựa chọn các tiện ích của chương trình, vào ra dữ liệu bằng tập tin.
