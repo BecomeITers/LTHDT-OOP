@@ -5,3 +5,10 @@ C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\
 C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.csproj.CoreCompileInputs.cache
 C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.exe
 C:\Users\hoang\OneDrive\Desktop\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.pdb
+E:\UTE\SECOND YEAR\OOP\LTHDT-OOP\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.csproj.AssemblyReference.cache
+E:\UTE\SECOND YEAR\OOP\LTHDT-OOP\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.csproj.CoreCompileInputs.cache
+E:\UTE\SECOND YEAR\OOP\LTHDT-OOP\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.exe
+E:\UTE\SECOND YEAR\OOP\LTHDT-OOP\GiangVien&SinhVien\GiangVien&SinhVien\obj\Debug\GiangVien&SinhVien.pdb
+E:\UTE\SECOND YEAR\OOP\LTHDT-OOP\GiangVien&SinhVien\GiangVien&SinhVien\bin\Debug\GiangVien&SinhVien.exe.config
+E:\UTE\SECOND YEAR\OOP\LTHDT-OOP\GiangVien&SinhVien\GiangVien&SinhVien\bin\Debug\GiangVien&SinhVien.exe
+E:\UTE\SECOND YEAR\OOP\LTHDT-OOP\GiangVien&SinhVien\GiangVien&SinhVien\bin\Debug\GiangVien&SinhVien.pdb

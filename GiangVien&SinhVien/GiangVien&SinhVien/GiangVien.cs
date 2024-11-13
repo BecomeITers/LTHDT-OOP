@@ -13,8 +13,18 @@ namespace GiangVien_SinhVien
         public override void NhapThongTin()
         {
             base.NhapThongTin();
-            Console.Write("Nhap bo mon: ");
-            BoMon = Console.ReadLine();
+            while (true)
+            {
+                try
+                {
+                    BoMon = NhapChuoi("Nhap bo mon: ");
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Loi: {ex.Message}. Vui long nhap lai!");
+                }
+            }
         }
 
         public override void XuatThongTin()
