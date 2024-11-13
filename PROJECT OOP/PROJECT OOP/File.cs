@@ -32,7 +32,8 @@ namespace PROJECT_OOP
             {
                 using (StreamWriter writer = new StreamWriter(FileName, true))
                 {
-                    writer.WriteLine(thuocTinh);
+                    string NgayThangNam = thuocTinh.ToString("dd / MM / yyyy");
+                    writer.WriteLine(NgayThangNam);
                 }
             }
             catch (Exception ex)

@@ -26,9 +26,21 @@ namespace GiangVien_SinhVien
             HoTen = Console.ReadLine();
             file.MoVietString(HoTen);
 
-            Console.Write("Nhap ngay thang nam sinh (dd/MM/yyyy): ");
-            NgaySinh = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
-            file.MoVietDateTime(NgaySinh);
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Nhap ngay thang nam sinh (dd/MM/yyyy): ");
+                    NgaySinh = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
+                    file.MoVietDateTime(NgaySinh);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Loi: {ex.Message}. Vui long nhap lai!");
+                    continue;
+                }
+                break;
+            }
 
             Console.Write("Nhap gioi tinh: ");
             GioiTinh = Console.ReadLine();

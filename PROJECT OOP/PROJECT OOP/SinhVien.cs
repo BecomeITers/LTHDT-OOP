@@ -29,6 +29,7 @@ namespace GiangVien_SinhVien
             KhoaHoc = int.Parse(Console.ReadLine());
             file.MoVietNumber(KhoaHoc);
 
+            string space = string.Empty;
             file.MoVietString(space);
         }
 
