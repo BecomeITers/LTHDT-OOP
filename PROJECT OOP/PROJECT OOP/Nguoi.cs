@@ -28,12 +28,18 @@ namespace GiangVien_SinhVien
                 {
                     Console.Write("Nhap ho ten: ");
                     HoTen = Console.ReadLine();
+                    foreach (char c in HoTen)
+                    {
+                        if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
+                        {
+                            throw new Exception("Ho ten chi duoc chua chu cai khong dau va khoang trang, khong duoc chua so hoac ky tu dac biet!");
+                        }
+                    }
                     file.MoVietString(HoTen);
                 }
                 catch(Exception ex)
                 {
                     Console.WriteLine($"Loi: {ex.Message}");
-                    file.XoaPhanTuCuoi();
                     continue;
                 }
                 break;
@@ -61,6 +67,14 @@ namespace GiangVien_SinhVien
                 {
                     Console.Write("Nhap gioi tinh: ");
                     GioiTinh = Console.ReadLine();
+                    foreach (char c in GioiTinh)
+                    {
+                        if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
+                        {
+                            throw new Exception("Nam/Nu/Khac");
+                        }
+                    }
+
                     file.MoVietString(GioiTinh);
                 }
                 catch (Exception ex)

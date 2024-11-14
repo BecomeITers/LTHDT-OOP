@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\LTHDT-OOP\\PROJECT OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\hocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\hocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\quanlytkb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\quanlytkb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|d:\\lthdt-oop\\project oop\\project oop\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|d:\\lthdt-oop\\project oop\\project oop\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\hocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\hocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\quanlytkb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\quanlytkb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\thoikhoabieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -74,20 +74,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SinhVien.cs",
               "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\SinhVien.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\SinhVien.cs",
               "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\SinhVien.cs",
               "RelativeToolTip": "PROJECT OOP\\SinhVien.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCUAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T06:51:22.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "QuanLyTKB.cs",
               "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\QuanLyTKB.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\QuanLyTKB.cs",
@@ -95,18 +95,17 @@
               "RelativeToolTip": "PROJECT OOP\\QuanLyTKB.cs",
               "ViewState": "AgIAANEAAAAAAAAAAAAQwOQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:51:21.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:51:21.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Nguoi.cs",
               "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Nguoi.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\Nguoi.cs",
               "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Nguoi.cs",
               "RelativeToolTip": "PROJECT OOP\\Nguoi.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwEgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T06:51:19.892Z",
               "EditorCaption": ""
@@ -125,26 +124,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "HocPhan.cs",
               "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\HocPhan.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\HocPhan.cs",
               "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\HocPhan.cs",
               "RelativeToolTip": "PROJECT OOP\\HocPhan.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAYwKkAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAQwG4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T06:51:18.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GiangVien.cs",
               "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\GiangVien.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\GiangVien.cs",
               "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\GiangVien.cs",
               "RelativeToolTip": "PROJECT OOP\\GiangVien.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCQAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T06:51:17.689Z",
               "EditorCaption": ""

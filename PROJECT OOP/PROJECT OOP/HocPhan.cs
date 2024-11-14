@@ -98,9 +98,28 @@ namespace TKB
         /// Hàm nhập danh sách học phần
         public void NhapHocPhan()
         {
-            Console.Write("Nhap ten hoc phan: ");
-            tenHocPhan = Console.ReadLine();
-            file.MoVietString(tenHocPhan);
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Nhap ten hoc phan: ");
+                    tenHocPhan = Console.ReadLine();
+                    foreach (char c in tenHocPhan)
+                    {
+                        if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
+                        {
+                            throw new Exception("Ten hoc phan chi duoc chua chu cai khong dau va khoang trang, khong duoc chua so hoac ky tu dac biet!");
+                        }
+                    }
+                    file.MoVietString(tenHocPhan);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Loi: {ex.Message}. Vui long nhap lai!");
+                    continue;
+                }
+                break;
+            }
 
             Console.Write("Nhap ma hoc phan: ");
             maHocPhan = Console.ReadLine();

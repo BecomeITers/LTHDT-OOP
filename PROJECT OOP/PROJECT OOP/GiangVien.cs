@@ -28,12 +28,19 @@ namespace GiangVien_SinhVien
                 {
                     Console.Write("Nhap bo mon: ");
                     BoMon = Console.ReadLine();
+                    foreach (char c in BoMon)
+                    {
+                        if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
+                        {
+                            throw new Exception("Bo mon chi duoc chua chu cai khong dau va khoang trang, khong duoc chua so hoac ky tu dac biet!");
+                        }
+                    }
+
                     file.MoVietString(BoMon);
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Loi: {ex.Message}");
-                    file.XoaPhanTuCuoi();
                     continue;
                 }
                 break;
