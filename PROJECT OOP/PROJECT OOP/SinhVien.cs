@@ -25,9 +25,22 @@ namespace GiangVien_SinhVien
             MaLop = Console.ReadLine();
             file.MoVietString(MaLop);
 
-            Console.Write("Nhap khoa hoc: ");
-            KhoaHoc = int.Parse(Console.ReadLine());
-            file.MoVietNumber(KhoaHoc);
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Nhap khoa hoc: ");
+                    KhoaHoc = int.Parse(Console.ReadLine());
+                    file.MoVietNumber(KhoaHoc);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Loi: {ex.Message}");
+                    file.XoaPhanTuCuoi();
+                    continue;
+                }
+                break;
+            }
 
             string space = string.Empty;
             file.MoVietString(space);

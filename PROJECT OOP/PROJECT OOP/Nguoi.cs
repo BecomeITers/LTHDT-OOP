@@ -22,9 +22,22 @@ namespace GiangVien_SinhVien
             MaSo = Console.ReadLine();
             file.MoVietString(MaSo);
 
-            Console.Write("Nhap ho ten: ");
-            HoTen = Console.ReadLine();
-            file.MoVietString(HoTen);
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Nhap ho ten: ");
+                    HoTen = Console.ReadLine();
+                    file.MoVietString(HoTen);
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine($"Loi: {ex.Message}");
+                    file.XoaPhanTuCuoi();
+                    continue;
+                }
+                break;
+            }
 
             while (true)
             {
@@ -42,9 +55,22 @@ namespace GiangVien_SinhVien
                 break;
             }
 
-            Console.Write("Nhap gioi tinh: ");
-            GioiTinh = Console.ReadLine();
-            file.MoVietString(GioiTinh);
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Nhap gioi tinh: ");
+                    GioiTinh = Console.ReadLine();
+                    file.MoVietString(GioiTinh);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Loi: {ex.Message}");
+                    file.XoaPhanTuCuoi();
+                    continue;
+                }
+                break;
+            }
         }
 
         public virtual void XuatThongTin()

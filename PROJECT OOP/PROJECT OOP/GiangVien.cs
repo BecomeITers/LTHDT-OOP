@@ -21,9 +21,23 @@ namespace GiangVien_SinhVien
 
             base.NhapThongTin();
 
-            Console.Write("Nhap bo mon: ");
-            BoMon = Console.ReadLine();
-            file.MoVietString(BoMon);
+
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Nhap bo mon: ");
+                    BoMon = Console.ReadLine();
+                    file.MoVietString(BoMon);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Loi: {ex.Message}");
+                    file.XoaPhanTuCuoi();
+                    continue;
+                }
+                break;
+            }
         }
 
         public override void XuatThongTin()
