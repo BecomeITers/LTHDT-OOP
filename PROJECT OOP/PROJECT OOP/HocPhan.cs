@@ -246,8 +246,7 @@ namespace TKB
                             break;
                         case "3":
                             Console.Write("Nhap giang vien phu trach moi: ");
-                            GiangVien giangVienMoi = new GiangVien();
-                            giangVienPhuTrach = giangVienMoi;
+                            giangVienPhuTrach.NhapThongTin();
                             break;
                         case "4":
                             Console.Write("Nhap phong hoc moi: ");
