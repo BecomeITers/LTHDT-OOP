@@ -10,9 +10,9 @@ namespace GiangVien_SinhVien
 {
     public class GiangVien : Nguoi, IThongTin
     {
-        public string BoMon { get; set; }
+        public string Khoa { get; set; }
 
-        File file = new File();
+        TapTin file = new TapTin();
 
         public override void NhapThongTin()
         {
@@ -26,9 +26,9 @@ namespace GiangVien_SinhVien
             {
                 try
                 {
-                    Console.Write("Nhap bo mon: ");
-                    BoMon = Console.ReadLine();
-                    foreach (char c in BoMon)
+                    Console.Write("Nhap khoa: ");
+                    Khoa = Console.ReadLine();
+                    foreach (char c in Khoa)
                     {
                         if (!char.IsLetter(c) && !char.IsWhiteSpace(c))
                         {
@@ -36,7 +36,7 @@ namespace GiangVien_SinhVien
                         }
                     }
 
-                    file.MoVietString(BoMon);
+                    file.MoVietString(Khoa);
                 }
                 catch (Exception ex)
                 {
@@ -50,7 +50,7 @@ namespace GiangVien_SinhVien
         public override void XuatThongTin()
         {
             base.XuatThongTin();
-            Console.WriteLine($"Bo mon: {BoMon}");
+            Console.WriteLine($"Khoa: {Khoa}");
         }
     }
 }

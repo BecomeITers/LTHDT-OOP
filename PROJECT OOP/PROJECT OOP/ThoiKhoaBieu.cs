@@ -1,6 +1,9 @@
+using PROJECT_OOP;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
@@ -13,9 +16,10 @@ namespace TKB
     {
         private DateTime ngayBatDau;
         private DateTime ngayKetThuc;
-        private int tuanHoc;            
+        private int tuanHoc;
 
-        List<HocPhan> danhSachHocPhan = new List<HocPhan>();           // class HocPhan can bo sung sau
+        List<HocPhan> danhSachHocPhan = new List<HocPhan>();
+        TapTin file = new TapTin();
 
         //-------------
         // constructors
@@ -87,19 +91,35 @@ namespace TKB
             {
                 HocPhan HP = new HocPhan();
 
+                string title = $"Du lieu hoc phan thu {i + 1}:";
+                file.MoVietString(title);
+                Console.WriteLine($"Nhap hoc phan thu {i + 1}: ");
                 HP.NhapHocPhan();
-
                 // them vao danh sach mon hoc
                 danhSachHocPhan.Add(HP);
+                string space = string.Empty;
+                file.MoVietString(space);
+                Console.WriteLine(space);
             }
         }
         public void NhapTKB()
         {
             Console.Write("\nNhap ngay bat dau tuan hoc (dd/mm/yyyy): ");
-            ngayBatDau = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
-
-            while (ngayBatDau.DayOfWeek != DayOfWeek.Monday)
+            
+            while (true)
             {
+                try
+                {
+                    ngayBatDau = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
+                    file.MoVietDateTime(ngayBatDau);
+                } catch (Exception)
+                {
+                    Console.Write("!!! Nhap lai ngay bat dau tuan hoc (khong dung dinh dang): ");
+                    continue;
+                }
+
+                if (ngayBatDau.DayOfWeek == DayOfWeek.Monday) break;
+
                 string Thu = "";
                 if (ngayBatDau.DayOfWeek == DayOfWeek.Tuesday) Thu = "Thu ba";
                 else if (ngayBatDau.DayOfWeek == DayOfWeek.Wednesday) Thu = "Thu tu";
@@ -109,7 +129,7 @@ namespace TKB
                 else if (ngayBatDau.DayOfWeek == DayOfWeek.Sunday) Thu = "Chu nhat";
 
                 Console.Write($"!!! Nhap lai ngay bat dau tuan hoc (nen bat dau tu thu hai, ngay vua nhap la {Thu}): ");
-                ngayBatDau = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
+                // ngayBatDau = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
             }
             ngayKetThuc = ngayBatDau.AddDays(6);
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PROJECT_OOP
 {
-    public class File
+    public class TapTin
     {
         public void MoVietString(string thuocTinh)
         {

@@ -21,7 +21,7 @@ namespace TKB
         // ma so thu: 0 - "hai", 1 - "ba", 2 - "tu", 3 - "nam", 4 - "sau", 5 - "bay", 6 - "chu nhat"
         private int maSoThu;
         GiangVien giangVienPhuTrach = new GiangVien();
-        File file = new File();
+        TapTin file = new TapTin();
 
         //-------------
         // constructors

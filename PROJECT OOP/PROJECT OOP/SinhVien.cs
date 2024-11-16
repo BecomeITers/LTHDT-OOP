@@ -12,7 +12,7 @@ namespace GiangVien_SinhVien
         public string MaLop { get; set; }
         public int KhoaHoc { get; set; }
 
-        File file = new File();
+        TapTin file = new TapTin();
 
         public override void NhapThongTin()
         {

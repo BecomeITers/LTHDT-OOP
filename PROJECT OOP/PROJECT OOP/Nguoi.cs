@@ -14,7 +14,7 @@ namespace GiangVien_SinhVien
         public DateTime NgaySinh { get; set; }
         public string GioiTinh { get; set; }
 
-        File file = new File();
+        TapTin file = new TapTin();
 
         public virtual void NhapThongTin()
         {
