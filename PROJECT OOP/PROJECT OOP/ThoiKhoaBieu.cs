@@ -85,9 +85,12 @@ namespace TKB
             
             for (int i = 0; i < n; i++)
             {
-                // phuong thuc nhap hoc phan 
-                
+                HocPhan HP = new HocPhan();
+
+                HP.NhapHocPhan();
+
                 // them vao danh sach mon hoc
+                danhSachHocPhan.Add(HP);
             }
         }
         public void NhapTKB()
