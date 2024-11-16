@@ -14,13 +14,13 @@ namespace TKB
     {
         private string tenHocPhan;
         private string maHocPhan;
-        private GiangVien giangVienPhuTrach;
+        // private GiangVien giangVienPhuTrach;
         private string phongHoc;
         private int soTiet;
         private int tietBatDau;
         // ma so thu: 0 - "hai", 1 - "ba", 2 - "tu", 3 - "nam", 4 - "sau", 5 - "bay", 6 - "chu nhat"
         private int maSoThu;
-        GiangVien gv = new GiangVien();
+        GiangVien giangVienPhuTrach = new GiangVien();
         File file = new File();
 
         //-------------
@@ -126,7 +126,7 @@ namespace TKB
             file.MoVietString(maHocPhan);
 
             Console.WriteLine("Nhap giang vien phu trach: ");
-            gv.NhapThongTin();
+            giangVienPhuTrach.NhapThongTin();
 
             Console.Write("Nhap phong hoc: ");
             phongHoc = Console.ReadLine();
