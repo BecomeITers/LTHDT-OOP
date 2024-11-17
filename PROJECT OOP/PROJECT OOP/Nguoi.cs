@@ -16,6 +16,22 @@ namespace GiangVien_SinhVien
 
         TapTin file = new TapTin();
 
+        public Nguoi()
+        {
+            MaSo = string.Empty;
+            HoTen = string.Empty;
+            NgaySinh = DateTime.MinValue;
+            GioiTinh = string.Empty;
+        }
+
+        public Nguoi(string maSo, string hoTen, DateTime ngaySinh, string gioiTinh)
+        {
+            this.MaSo = maSo;
+            this.HoTen = hoTen;
+            this.NgaySinh = ngaySinh;
+            this.GioiTinh = gioiTinh;
+        }
+
         public virtual void NhapThongTin()
         {
             Console.Write("Nhap ma so: ");

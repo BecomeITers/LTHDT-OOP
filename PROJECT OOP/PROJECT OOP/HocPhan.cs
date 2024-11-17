@@ -14,7 +14,6 @@ namespace TKB
     {
         private string tenHocPhan;
         private string maHocPhan;
-        // private GiangVien giangVienPhuTrach;
         private string phongHoc;
         private int soTiet;
         private int tietBatDau;

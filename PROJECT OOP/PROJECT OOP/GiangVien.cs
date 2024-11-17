@@ -14,6 +14,16 @@ namespace GiangVien_SinhVien
 
         TapTin file = new TapTin();
 
+        public GiangVien() : base()
+        {
+            Khoa = string.Empty;
+        }
+
+        public GiangVien(string maSo, string hoTen, DateTime ngaySinh, string gioiTinh, string khoa) : base(maSo, hoTen, ngaySinh, gioiTinh)
+        {
+            this.Khoa = khoa;
+        }
+
         public override void NhapThongTin()
         {
             string tile = "Thong tin giang vien: ";

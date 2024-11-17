@@ -1,41 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LTHDT-OOP\\PROJECT OOP\\",
+  "WorkspaceRootPath": "E:\\LTHDT-OOP\\PROJECT OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|e:\\lthdt-oop\\project oop\\project oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\thoikhoabieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\thoikhoabieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\ketthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\ketthuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|d:\\lthdt-oop\\project oop\\project oop\\hocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\hocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\quanlytkb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\quanlytkb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|d:\\lthdt-oop\\project oop\\project oop\\taptin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\taptin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\taptin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\hocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\hocphan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\giangvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\nguoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|D:\\LTHDT-OOP\\PROJECT OOP\\project oop\\ithongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\quanlytkb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\quanlytkb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\thoikhoabieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\thoikhoabieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|E:\\LTHDT-OOP\\PROJECT OOP\\project oop\\ithongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A233BA3-162C-4099-8162-A14672AD8DF2}|PROJECT OOP\\PROJECT OOP.csproj|solutionrelative:project oop\\ithongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,15 +50,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "KetThuc.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\KetThuc.cs",
+              "RelativeDocumentMoniker": "PROJECT OOP\\KetThuc.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\KetThuc.cs",
+              "RelativeToolTip": "PROJECT OOP\\KetThuc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T18:07:38.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IThongTin.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\IThongTin.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\IThongTin.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\IThongTin.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\IThongTin.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\IThongTin.cs",
               "RelativeToolTip": "PROJECT OOP\\IThongTin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -62,107 +78,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HocPhan.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\HocPhan.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\HocPhan.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\HocPhan.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\HocPhan.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\HocPhan.cs",
               "RelativeToolTip": "PROJECT OOP\\HocPhan.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:51:18.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:51:18.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "ThoiKhoaBieu.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\ThoiKhoaBieu.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\ThoiKhoaBieu.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\ThoiKhoaBieu.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\ThoiKhoaBieu.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\ThoiKhoaBieu.cs",
               "RelativeToolTip": "PROJECT OOP\\ThoiKhoaBieu.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAiwF0AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwG0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:51:23.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:51:23.34Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Program.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Program.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\Program.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Program.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Program.cs",
               "RelativeToolTip": "PROJECT OOP\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T06:39:57.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "QuanLyTKB.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\QuanLyTKB.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\QuanLyTKB.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\QuanLyTKB.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\QuanLyTKB.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\QuanLyTKB.cs",
               "RelativeToolTip": "PROJECT OOP\\QuanLyTKB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOQAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAABAAAAAAAAAAAwwOQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:51:21.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:51:21.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TapTin.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\TapTin.cs",
+              "RelativeDocumentMoniker": "PROJECT OOP\\TapTin.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\TapTin.cs",
+              "RelativeToolTip": "PROJECT OOP\\TapTin.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAewEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T09:21:25.952Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TapTin.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\TapTin.cs",
-              "RelativeDocumentMoniker": "PROJECT OOP\\TapTin.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\TapTin.cs",
-              "RelativeToolTip": "PROJECT OOP\\TapTin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T09:21:25.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Nguoi.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Nguoi.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Nguoi.cs",
               "RelativeDocumentMoniker": "PROJECT OOP\\Nguoi.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Nguoi.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\Nguoi.cs",
               "RelativeToolTip": "PROJECT OOP\\Nguoi.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowCQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwB8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:51:19.892Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SinhVien.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\SinhVien.cs",
-              "RelativeDocumentMoniker": "PROJECT OOP\\SinhVien.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\SinhVien.cs",
-              "RelativeToolTip": "PROJECT OOP\\SinhVien.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCUAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:51:22.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:51:19.892Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GiangVien.cs",
-              "DocumentMoniker": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\GiangVien.cs",
-              "RelativeDocumentMoniker": "PROJECT OOP\\GiangVien.cs",
-              "ToolTip": "D:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\GiangVien.cs",
-              "RelativeToolTip": "PROJECT OOP\\GiangVien.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwA8AAAAAAAAAAAAAAA==",
+              "Title": "SinhVien.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\SinhVien.cs",
+              "RelativeDocumentMoniker": "PROJECT OOP\\SinhVien.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\SinhVien.cs",
+              "RelativeToolTip": "PROJECT OOP\\SinhVien.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T06:51:17.689Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T06:51:22.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GiangVien.cs",
+              "DocumentMoniker": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\GiangVien.cs",
+              "RelativeDocumentMoniker": "PROJECT OOP\\GiangVien.cs",
+              "ToolTip": "E:\\LTHDT-OOP\\PROJECT OOP\\PROJECT OOP\\GiangVien.cs",
+              "RelativeToolTip": "PROJECT OOP\\GiangVien.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAMwBUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T06:51:17.689Z"
             }
           ]
         }

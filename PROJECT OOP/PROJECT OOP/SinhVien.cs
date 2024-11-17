@@ -14,6 +14,18 @@ namespace GiangVien_SinhVien
 
         TapTin file = new TapTin();
 
+        public SinhVien() : base()
+        {
+            MaLop = string.Empty;
+            KhoaHoc = 0;
+        }
+
+        public SinhVien(string maSo, string hoTen, DateTime ngaySinh, string gioiTinh, string maLop, int khoaHoc) : base(maSo, hoTen, ngaySinh, gioiTinh)
+        {
+            this.MaLop = maLop;
+            this.KhoaHoc = khoaHoc;
+        }
+
         public override void NhapThongTin()
         {
             string title = "Thong tin sinh vien: ";

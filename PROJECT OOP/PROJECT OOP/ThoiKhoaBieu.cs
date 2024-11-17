@@ -115,6 +115,7 @@ namespace TKB
                 } catch (Exception)
                 {
                     Console.Write("!!! Nhap lai ngay bat dau tuan hoc (khong dung dinh dang): ");
+                    file.XoaPhanTuCuoi();
                     continue;
                 }
 
