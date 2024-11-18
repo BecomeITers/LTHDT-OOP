@@ -76,17 +76,18 @@ namespace TKB
         private void NhapDanhSachHocPhan()
         {
             // so luong mon hoc can nhap
-            int n = 0;      
+            int n = 0;
 
             Console.Write("\nNhap so luong hoc phan co trong thoi khoa bieu: ");
             try
             {
                 n = Convert.ToInt32(Console.ReadLine());
-            } catch (Exception)
+            }
+            catch (Exception)
             {
                 Console.Write("!! Nhap lai so luong hoc phan: ");
             }
-            
+
             for (int i = 0; i < n; i++)
             {
                 HocPhan HP = new HocPhan();
@@ -105,14 +106,15 @@ namespace TKB
         public void NhapTKB()
         {
             Console.Write("\nNhap ngay bat dau tuan hoc (dd/mm/yyyy): ");
-            
+
             while (true)
             {
                 try
                 {
                     ngayBatDau = DateTime.ParseExact(Console.ReadLine(), "dd/MM/yyyy", null);
                     file.MoVietDateTime(ngayBatDau);
-                } catch (Exception)
+                }
+                catch (Exception)
                 {
                     Console.Write("!!! Nhap lai ngay bat dau tuan hoc (khong dung dinh dang): ");
                     file.XoaPhanTuCuoi();

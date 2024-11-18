@@ -9,7 +9,6 @@ namespace TKB
 {
     internal class QuanLyTKB
     {
-        SinhVien sv = new SinhVien();
         List<ThoiKhoaBieu> danhSachTKB = new List<ThoiKhoaBieu>();
 
         //-------------
@@ -98,9 +97,9 @@ namespace TKB
             {
                 try
                 {
-                   TuanHoc = Convert.ToInt32(Console.ReadLine());
+                    TuanHoc = Convert.ToInt32(Console.ReadLine());
 
-                   if (TuanHoc <= 0) throw new Exception();
+                    if (TuanHoc <= 0) throw new Exception();
                 }
                 catch (Exception)
                 {
@@ -139,7 +138,7 @@ namespace TKB
 
             DanhSachTKB[TuanHocInput - 1].ChinhSuaTKB();
         }
-        public int InTKBTheoTuan(int DoRongOInput) 
+        public int InTKBTheoTuan(int DoRongOInput)
         {
             // mang luu cac tuan hoc duoi dang chuoi, phuc vu cho phuong thuc Split()
             string[] MangTuanHoc;
@@ -202,7 +201,8 @@ namespace TKB
                                 }
                             }
                         }
-                    } else
+                    }
+                    else
                     {
                         try
                         {
@@ -250,7 +250,7 @@ namespace TKB
                 Console.SetCursorPosition(0, HangSaoLuu);
                 for (int j = 0; j < HangTiepTheo - HangSaoLuu + 1; j++)
                 {
-                    Console.WriteLine($"{new string(' ', DoRongOInput * 10)}");
+                    Console.Write($"{new string(' ', DoRongOInput * 10)}");
                 }
             }
 
@@ -259,31 +259,50 @@ namespace TKB
             return HangSaoLuu + 1;
         }
         // bơ-phẹc
-        public void HuyHocPhan()
+        public int HuyHocPhan(ThoiKhoaBieu TKBGoc)
         {
             string TenHPCanHuy = "";
             Console.Write("\n>>> Nhap ten hoc phan muon huy: ");
-            TenHPCanHuy =  Console.ReadLine();
+            TenHPCanHuy = Console.ReadLine();
+
+            // tim xem hoc phan can huy co nam trong thoi khoa bieu khong
+            int kt = 0;
+            foreach (HocPhan HP in TKBGoc.DanhSachHocPhan)
+            {
+                if (TenHPCanHuy == HP.TenHocPhan)
+                {
+                    kt = 1;
+                    break;
+                }
+            }
+            // khong tim thay (kt == 0), tra ve 0
+            if (kt == 0) return 0;
 
             foreach (ThoiKhoaBieu TKBDuyet in danhSachTKB)
             {
                 TKBDuyet.DanhSachHocPhan.RemoveAll((hp) => hp.TenHocPhan == TenHPCanHuy);
             }
+
+            TKBGoc.DanhSachHocPhan.RemoveAll((hp) => hp.TenHocPhan == TenHPCanHuy);
+
+            return 1;
         }
 
         // !!! phuong thuc ThemHocPhan chua duoc test !!!
-        public void ThemHocPhan()
+        public void ThemHocPhan(ThoiKhoaBieu TKBGoc)
         {
             HocPhan HocPhanCanThem = new HocPhan();
             // nhap thong tin hoc phan can them
             Console.WriteLine("\n>>> Nhap thong tin hoc phan can them");
             // phuong thuc nhap hoc phan goi tu lop hoc phan va luu vao doi tuong HocPhanCanThem
-            // HocPhanCanThem.<phuong thuc nhap hoc phan>()
+            HocPhanCanThem.NhapHocPhan();
 
             foreach (ThoiKhoaBieu TKBDuyet in danhSachTKB)
             {
                 TKBDuyet.DanhSachHocPhan.Add(HocPhanCanThem);
             }
+
+            TKBGoc.DanhSachHocPhan.Add(HocPhanCanThem);
         }
     }
 }

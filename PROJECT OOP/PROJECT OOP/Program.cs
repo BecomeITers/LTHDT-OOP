@@ -52,12 +52,14 @@ namespace TKB
                             Console.Clear();
                             Console.WriteLine("=== QUAN LY THOI KHOA BIEU ===");
                             Console.WriteLine("1: Nhap thoi khoa bieu");
-                            Console.WriteLine("2: In thoi khoa bieu theo tuan");
-                            Console.WriteLine("3: Chinh sua tuan hoc");
-                            Console.WriteLine("4: Lam trong thoi khoa bieu");
+                            Console.WriteLine("2: Lam trong mot tuan hoc");
+                            Console.WriteLine("3: In thoi khoa bieu theo tuan");
+                            Console.WriteLine("4: Chinh sua tuan hoc");
                             Console.WriteLine("5: Them hoc phan");
                             Console.WriteLine("6: Huy hoc phan");
-                            Console.WriteLine("7: Quay lai menu chinh");
+                            Console.WriteLine("7: Kiem tra trung lich trong thoi khoa bieu");
+                            Console.WriteLine("8: In thong tin cac giang vien co trong thoi khoa bieu");
+                            Console.WriteLine("9: Quay lai menu chinh");
                             Console.WriteLine("==============================");
 
                             Console.Write("chon phuong an: ");
@@ -69,56 +71,87 @@ namespace TKB
                                     try
                                     {
                                         TKB.NhapTKB();
-                                        Console.WriteLine("Nhap thoi khoa bieu thanh cong!");
+                                        QLTKB.NhanBanTuanHoc(TKB);
+                                        Console.WriteLine("### Nhap thoi khoa bieu thanh cong!");
                                     }
                                     catch (Exception ex)
                                     {
-                                        Console.WriteLine($"ERROR: {ex.Message}");
+                                        Console.WriteLine($"!!! ERROR: {ex.Message}");
                                     }
                                     break;
 
                                 case 2:
                                     try
                                     {
-                                        QLTKB.NhanBanTuanHoc(TKB);
-                                        int VTChuot1 = QLTKB.InTKBTheoTuan(DoRongO);
-                                        Console.SetCursorPosition(0, VTChuot1);
-                                        Console.Clear();
+                                        QLTKB.LamTrongTKB();
+                                        Console.WriteLine("### Thoi khoa bieu da duoc lam trong!");
                                     }
                                     catch (Exception ex)
                                     {
-                                        Console.WriteLine($"ERROR: {ex.Message}");
+                                        Console.WriteLine($"!!! ERROR: {ex.Message}");
                                     }
                                     break;
 
                                 case 3:
                                     try
                                     {
-                                        QLTKB.ChinhSuaTuanHoc();
-                                        Console.WriteLine("Chinh sua thanh cong!");
+                                        int VTChuot1 = QLTKB.InTKBTheoTuan(DoRongO);
+                                        Console.SetCursorPosition(0, VTChuot1);
+                                        Console.Clear();
                                     }
                                     catch (Exception ex)
                                     {
-                                        Console.WriteLine($"ERROR: {ex.Message}");
+                                        Console.WriteLine($"!!! ERROR: {ex.Message}");
                                     }
                                     break;
 
                                 case 4:
-                                    QLTKB.LamTrongTKB();
-                                    Console.WriteLine("Thoi khoa bieu da duoc lam trong!");
+                                    try
+                                    {
+                                        QLTKB.ChinhSuaTuanHoc();
+                                        Console.WriteLine("### Chinh sua thanh cong!");
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"!!! ERROR: {ex.Message}");
+                                    }
                                     break;
 
                                 case 5:
-                                    QLTKB.ThemHocPhan();
-                                    Console.WriteLine("Hoc phan da duoc themn!");
+                                    QLTKB.ThemHocPhan(TKB);
+                                    Console.WriteLine("### Hoc phan da duoc them!");
                                     break;
 
                                 case 6:
-                                    QLTKB.HuyHocPhan();
-                                    Console.WriteLine("Hoc phan da huy!");
+                                    int kt_GiaTriTraVe;
+                                    kt_GiaTriTraVe = QLTKB.HuyHocPhan(TKB);
+                                    if (kt_GiaTriTraVe == 1)
+                                    {
+                                        Console.WriteLine("### Hoc phan da huy!");
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("!!! Khong ton tai hoc phan trong thoi khoa bieu!");
+                                    }
+
                                     break;
 
                                 case 7:
+                                    TKB.KiemTraTrung();
+                                    break;
+
+                                case 8:
+                                    Console.WriteLine("Danh sach giang vien co trong thoi khoa bieu:");
+                                    int i = 1;
+                                    foreach (HocPhan HP in TKB.DanhSachHocPhan)
+                                    {
+                                        Console.Write($"{i}/ ");
+                                        HP.GiangVienPhuTrach.XuatThongTin();
+                                        i++;
+                                    }
+                                    break;
+
+                                case 9:
                                     exitSubLoop = true;
                                     break;
 
