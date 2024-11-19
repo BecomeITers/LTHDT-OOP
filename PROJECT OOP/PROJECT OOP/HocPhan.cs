@@ -34,7 +34,16 @@ namespace TKB
             tietBatDau = 0;
             maSoThu = 0;
         }
-
+        public HocPhan(HocPhan HPKhac)
+        {
+            tenHocPhan = HPKhac.TenHocPhan;
+            maHocPhan = HPKhac.MaHocPhan;
+            phongHoc = HPKhac.PhongHoc;
+            soTiet = HPKhac.SoTiet;
+            tietBatDau = HPKhac.TietBatDau;
+            MaSoThu = HPKhac.MaSoThu;
+            giangVienPhuTrach = HPKhac.GiangVienPhuTrach;
+        }
         public HocPhan(string tenHocPhan_I, string maHocPhan_I, GiangVien giangVienPhuTrach_I, string phongHoc_I, int soTiet_I, int tietBatDau_I, int maSoThu_I)
         {
             tenHocPhan = tenHocPhan_I;
@@ -196,16 +205,6 @@ namespace TKB
         /// Hàm chỉnh sửa học phần
         public void ChinhSuaHocPhan()
         {
-            /*
-            if (this != null)
-            {
-                
-            }
-            else
-            {
-                Console.WriteLine("!!! Khong tim thay hoc phan.");
-            }
-            */
             int kt = 0;
             while (true)
             {
