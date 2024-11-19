@@ -1,308 +1,239 @@
 using GiangVien_SinhVien;
+using PROJECT_OOP;
+using ShutdownApp;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace TKB
 {
-    internal class QuanLyTKB
+    internal class Program
     {
-        List<ThoiKhoaBieu> danhSachTKB = new List<ThoiKhoaBieu>();
-
-        //-------------
-        // constructors
-        //-------------
-        public QuanLyTKB()
+        static void Main(string[] args)
         {
+            // Khởi tạo đối tượng
+            ThoiKhoaBieu TKB = new ThoiKhoaBieu();
+            QuanLyTKB QLTKB = new QuanLyTKB();
+            int BeNgangConsole = Console.LargestWindowWidth - 5;
+            int ChieuDocConsole = Console.LargestWindowHeight - 5;
+            Console.SetWindowSize(BeNgangConsole, ChieuDocConsole);
 
-        }
+            int DoRongO = (BeNgangConsole - 2) / 8;
+            TapTin file = new TapTin();
+            SinhVien sv = new SinhVien();
 
-        public QuanLyTKB(List<ThoiKhoaBieu> danhSachTKBInput)
-        {
-            danhSachTKB = danhSachTKBInput;
-        }
-
-        //---------
-        // property
-        //---------
-        public List<ThoiKhoaBieu> DanhSachTKB
-        {
-            get { return danhSachTKB; }
-            set { danhSachTKB = value; }
-        }
-
-        //--------
-        // methods
-        //--------
-        public void NhanBanTuanHoc(ThoiKhoaBieu TKBInput)
-        {
-            int n;          // bien luu so luong tuan hoc co trong nam hoc
-            ThoiKhoaBieu TKBtuan1 = new ThoiKhoaBieu();
-
-            TKBInput.SaoLuu(TKBtuan1);
-
-            Console.Write("Nhap so tuan co trong nam hoc: ");
-            while (true)
-            {
-                try
-                {
-                    n = Convert.ToInt32(Console.ReadLine());
-
-                    if (n <= 0) throw new Exception();
-                }
-                catch (Exception)
-                {
-                    Console.Write("!! Nhap lai so tuan hoc trong nam hoc: ");
-                    continue;
-                }
-
-                break;
-            }
-
-            danhSachTKB.Add(TKBtuan1);
-
-            // so thu tu cua tuan hoc bat dau tu 1 -> ...
-            // vi tri tuan hoc trong danh sach bat dau tu 0 -> ...
-            // i duyet tuan hoc TRONG DANH SACH 
-            ThoiKhoaBieu TKBTruoc = new ThoiKhoaBieu();
-            ThoiKhoaBieu TKBTiep = new ThoiKhoaBieu();
-            for (int i = 1; i < n; i++)
-            {
-                danhSachTKB[i - 1].SaoLuu(TKBTruoc);
-                danhSachTKB[i - 1].SaoLuu(TKBTiep);
-
-                // cap nhat ngay bat dau, ket thuc tuan hoc tiep theo
-                TKBTiep.NgayBatDau = TKBTruoc.NgayBatDau.AddDays(7);
-                TKBTiep.NgayKetThuc = TKBTruoc.NgayKetThuc.AddDays(7);
-
-                // cap nhat so thu tu cua tuan hoc tiep theo
-                TKBTiep.TuanHoc = i + 1;
-
-                // them tuan hoc tiep theo vao danh sach
-                danhSachTKB.Add(TKBTiep);
-
-                TKBTiep = new ThoiKhoaBieu();
-                TKBTruoc = new ThoiKhoaBieu();
-            }
-        }
-
-        // lam trong 1 tuan hoc trong danh sach TKB
-        public void LamTrongTKB()
-        {
-            int TuanHoc = 0;
-
-            Console.Write("Nhap so thu tu tuan hoc can lam trong: ");
-            while (true)
-            {
-                try
-                {
-                   TuanHoc = Convert.ToInt32(Console.ReadLine());
-
-                   if (TuanHoc <= 0) throw new Exception();
-                }
-                catch (Exception)
-                {
-                    Console.Write("!! Nhap lai so thu tu tuan hoc can lam trong: ");
-                    continue;
-                }
-
-                break;
-            }
-
-            // lam trong chu khong xoa tuan hoc
-            danhSachTKB[TuanHoc - 1].DanhSachHocPhan.Clear();
-        }
-
-        // Chinh sua tuan hoc (TKB) trong danh sach TKB
-        public void ChinhSuaTuanHoc()
-        {
-            int TuanHocInput;
-            Console.Write("Nhap so thu tu tuan hoc can chinh sua: ");
-            while (true)
-            {
-                try
-                {
-                    TuanHocInput = Convert.ToInt32(Console.ReadLine());
-
-                    if (TuanHocInput <= 0) throw new Exception();
-                }
-                catch (Exception)
-                {
-                    Console.Write("!! Nhap lai so thu tu tuan hoc can chinh sua: ");
-                    continue;
-                }
-
-                break;
-            }
-
-            danhSachTKB[TuanHocInput - 1].ChinhSuaTKB();
-        }
-        public int InTKBTheoTuan(int DoRongOInput) 
-        {
-            // mang luu cac tuan hoc duoi dang chuoi, phuc vu cho phuong thuc Split()
-            string[] MangTuanHoc;
-
-            // danh sach cac tuan hoc can in sau cung (chuyen ve so nguyen)
-            List<int> DanhSachTuanHoc = new List<int>();
-
-            // chuoi luu ket qua nhap tu ban phim
-            string s;
-
-            Console.Write(">>> Nhap cac tuan hoc can in ra man hinh: ");
-            while (true)
-            {
-                s = Console.ReadLine();
-
-                MangTuanHoc = s.Split(' ');
-
-                foreach (string i in MangTuanHoc)
-                {
-                    // cac truong hop:
-                    // + i chua ki tu ':'
-                    // + i la 1 so nguyen
-                    // + i khong phai so nguyen cung khong chua ki tu ':'
-                    if (i.Contains(':'))
-                    {
-                        // tach tiep chuoi i thanh cac phan (so luong phan mong doi la 2)
-                        string[] MangPhu = i.Split(':');
-
-                        // neu so luong phan tu thu duoc sau khi tach bang 2 thi tiep tuc xu li
-                        if (MangPhu.Length == 2)
-                        {
-                            // chuyen doi cac phan tu sau khi tach thanh so nguyen:
-                            // + neu chuyen duoc (khong loi) thi tiep tuc xu li
-                            // + neu khong chuyen duoc thi bo qua
-                            try
-                            {
-                                // dieu kien de vuot qua khoi try-catch:
-                                // + chuyen duoc ve so nguyen
-                                // + so nguyen thu duoc la so tu nhien khac 0 (N*)
-                                if (Convert.ToInt32(MangPhu[0]) <= 0 || Convert.ToInt32(MangPhu[1]) <= 0)
-                                    throw new Exception();
-                            }
-                            catch (Exception)
-                            {
-                                continue;
-                            }
-
-                            // neu chuyen duoc thanh so nguyen thi chuyen
-                            int k0 = Convert.ToInt32(MangPhu[0]);
-                            int k1 = Convert.ToInt32(MangPhu[1]);
-
-                            // luu cac so nguyen vua thu duoc vao danh sach va dam bao khong trung gia tri
-                            for (int k = k0; k <= k1; k++)
-                            {
-                                // dam bao khong trung voi cac gia tri san co trong danh sach
-                                if (!DanhSachTuanHoc.Contains(k))
-                                {
-                                    // neu thoa tat ca cac dieu kien thi them vao danh sach
-                                    DanhSachTuanHoc.Add(k);
-                                }
-                            }
-                        }
-                    } else
-                    {
-                        try
-                        {
-                            if (Convert.ToInt32(i) <= 0) throw new Exception();
-                        }
-                        catch (Exception)
-                        {
-                            continue;
-                        }
-
-                        int j = Convert.ToInt32(i);
-
-                        DanhSachTuanHoc.Add(j);
-                    }
-                }
-                // ket thuc vong lap foreach
-
-                if (DanhSachTuanHoc.Count != 0) break;
-                else Console.Write("!! Nhap lai cac tuan hoc can in ra man hinh: ");
-            }
-            // ket thuc vong lap while
-
-            // sap xep danh sach cac tuan hoc tang dan so thu tu tuan hoc
-            DanhSachTuanHoc.Sort();
-
-            // in xac nhan danh sach cac tuan hoc se duoc in
-            Console.Write(">> Cac tuan hoc se duoc in: ");
-            foreach (int i in DanhSachTuanHoc)
-            {
-                Console.Write(i + " ");
-            }
+            //Nhập thông tin sinh viên
+            Console.WriteLine("Nhap thong tin sinh vien: ");
+            sv.NhapThongTin();
+            file.MoVietString(string.Empty);
+            Console.WriteLine("\nThong tin sinh vien: ");
+            sv.XuatThongTin();
             Console.WriteLine();
 
-            // in cac TKB duoc chon
-            int HangTiepTheo = Console.CursorTop + 1;
-            int HangSaoLuu = HangTiepTheo;
-
-            foreach (int i in DanhSachTuanHoc)
+            bool exitMainLoop = false;
+            while (!exitMainLoop)
             {
-                HangTiepTheo = DanhSachTKB[i - 1].InTKB(DoRongOInput, HangSaoLuu);
+                Console.Clear();
+                Console.WriteLine("=== MENU ===");
+                Console.WriteLine("1: Quan Ly Thoi Khoa Bieu");
+                Console.WriteLine("2: In Thoi Khoa Bieu co san");
+                Console.WriteLine("3: Ket thuc chuong trinh");
+                Console.WriteLine("==================");
 
-                Console.WriteLine();
-                Console.ReadKey();
+                Console.Write("chon phuong an: ");
+                int choose = int.Parse(Console.ReadLine());
 
-                Console.SetCursorPosition(0, HangSaoLuu);
-                for (int j = 0; j < HangTiepTheo - HangSaoLuu + 1; j++)
+                switch (choose)
                 {
-                    Console.Write($"{new string(' ', DoRongOInput * 10)}");
+                    case 1:
+                        bool exitSubLoop = false;
+                        while (!exitSubLoop)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("=== QUAN LY THOI KHOA BIEU ===");
+                            Console.WriteLine("1: Nhap thoi khoa bieu");
+                            Console.WriteLine("2: Lam trong mot tuan hoc");
+                            Console.WriteLine("3: In thoi khoa bieu theo tuan");
+                            Console.WriteLine("4: Chinh sua tuan hoc");
+                            Console.WriteLine("5: Them hoc phan");
+                            Console.WriteLine("6: Huy hoc phan");
+                            Console.WriteLine("7: Kiem tra trung lich trong thoi khoa bieu");
+                            Console.WriteLine("8: In thong tin cac giang vien co trong thoi khoa bieu");
+                            Console.WriteLine("9: Quay lai menu chinh");
+                            Console.WriteLine("==============================");
+
+                            Console.Write("Chon phuong an: ");
+                            int subChoose;
+                            while (true)
+                            {
+                                try
+                                {
+                                    subChoose = int.Parse(Console.ReadLine());
+                                }
+                                catch (Exception)
+                                {
+                                    Console.Write("!!! Vui long chon lai phuong an: ");
+                                    continue;
+                                }
+
+                                break;
+                            }
+                            
+                            switch (subChoose)
+                            {
+                                case 1:
+                                    try
+                                    {
+                                        TKB.NhapTKB();
+                                        QLTKB.NhanBanTuanHoc(TKB);
+                                        Console.WriteLine("### Nhap thoi khoa bieu thanh cong!");
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"!!! ERROR: {ex.Message}");
+                                    }
+                                    break;
+
+                                case 2:
+                                    try
+                                    {
+                                        QLTKB.LamTrongTKB();
+                                        Console.WriteLine("### Thoi khoa bieu da duoc lam trong!");
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"!!! ERROR: {ex.Message}");
+                                    }
+                                    break;
+
+                                case 3:
+                                    try
+                                    {   
+                                        int VTChuot1 = QLTKB.InTKBTheoTuan(DoRongO);
+                                        Console.SetCursorPosition(0, VTChuot1);
+                                        Console.Clear();
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"!!! ERROR: {ex.Message}");
+                                    }
+                                    break;
+
+                                case 4:
+                                    try
+                                    {
+                                        QLTKB.ChinhSuaTuanHoc();
+                                        Console.WriteLine("### Chinh sua thanh cong!");
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        Console.WriteLine($"!!! ERROR: {ex.Message}");
+                                    }
+                                    break;
+
+                                case 5:
+                                    QLTKB.ThemHocPhan(TKB);
+                                    Console.WriteLine("### Hoc phan da duoc them!");
+                                    break;
+
+                                case 6:
+                                    int kt_GiaTriTraVe;
+                                    kt_GiaTriTraVe = QLTKB.HuyHocPhan(TKB);
+                                    if (kt_GiaTriTraVe == 1)
+                                    {
+                                        Console.WriteLine("### Hoc phan da huy!");
+                                    } else {
+                                        Console.WriteLine("!!! Khong ton tai hoc phan trong thoi khoa bieu!");
+                                    }
+                                    
+                                    break;
+
+                                case 7:
+                                    TKB.KiemTraTrung();
+                                    break;
+
+                                case 8:
+                                    Console.WriteLine("Danh sach giang vien co trong thoi khoa bieu:");
+                                    int i = 1;
+                                    foreach (HocPhan HP in TKB.DanhSachHocPhan)
+                                    {
+                                        Console.Write($"{i}/ ");
+                                        HP.GiangVienPhuTrach.XuatThongTin();
+                                        i++;
+                                    }
+                                    break;
+
+                                case 9:
+                                    exitSubLoop = true;
+                                    break;
+
+                                default:
+                                    Console.WriteLine("!!! Vui long nhap lai");
+                                    break;
+                            }
+
+                            if (!exitSubLoop)
+                            {
+                                Console.WriteLine("\nBan co muon tiep tuc (yes/no) ?");
+                                string continueInput = Console.ReadLine().ToLower();
+                                if (continueInput == "no") exitSubLoop = true;
+                            }
+                        }
+                        break;
+
+                    case 2:
+                        List<HocPhan> DS_HP = new List<HocPhan>();
+                        string fileName = "TKB.txt";
+                        try
+                        {
+                            foreach (var line in File.ReadLines(fileName))
+                            {
+                                var parts = line.Split(';');
+                                string tenHocPhan = parts[0];
+                                string maHocPhan = parts[1];
+                                GiangVien giangVien = new GiangVien(parts[2], parts[3], DateTime.Parse(parts[4]), parts[5], parts[6]);
+                                string phongHoc = parts[7];
+                                int soTiet = int.Parse(parts[8]);
+                                int tietBatDau = int.Parse(parts[9]);
+                                int maSoThu = int.Parse(parts[10]);
+                                DS_HP.Add(new HocPhan(tenHocPhan, maHocPhan, giangVien, phongHoc, soTiet, tietBatDau, maSoThu));
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("ERROR: " + ex.Message);
+                        }
+
+                        ThoiKhoaBieu tkb = new ThoiKhoaBieu();
+                        tkb.DanhSachHocPhan = DS_HP;
+                        tkb.NgayBatDau = new DateTime(2023, 09, 25);
+                        tkb.NgayKetThuc = tkb.NgayBatDau.AddDays(6);
+                        tkb.TuanHoc = 1;
+
+                        QuanLyTKB qltkb = new QuanLyTKB();
+                        qltkb.NhanBanTuanHoc(tkb);
+                        int VTChuot2 = qltkb.InTKBTheoTuan(DoRongO);
+                        Console.SetCursorPosition(0, VTChuot2);
+                        Console.Clear();
+                        break;
+
+                    case 3:
+                        KetThuc kt = new KetThuc();
+                        kt.TheEnd();
+                        break;
+
+                    default:
+                        Console.WriteLine("Vui long nhap lai");
+                        break;
+                }
+
+                if (!exitMainLoop)
+                {
+                    Console.WriteLine("\nBan co muon tiep tuc chuong trinh chinh (yes/no) ?");
+                    string input = Console.ReadLine().ToLower();
+                    if (input == "no") exitMainLoop = true;
                 }
             }
-
-            Console.SetCursorPosition(0, HangSaoLuu);
-            Console.Write(">>> Ket thuc in");
-            return HangSaoLuu + 1;
-        }
-        // phuong thuc huy hoc phan o tat ca cac tuan hoc
-        public int HuyHocPhan(ThoiKhoaBieu TKBGoc)
-        {
-            string TenHPCanHuy = "";
-            Console.Write("\n>>> Nhap ten hoc phan muon huy: ");
-            TenHPCanHuy =  Console.ReadLine();
-
-            // tim xem hoc phan can huy co nam trong thoi khoa bieu khong
-            int kt = 0;
-            foreach (HocPhan HP in TKBGoc.DanhSachHocPhan)
-            {
-                if (TenHPCanHuy == HP.TenHocPhan)
-                {
-                    kt = 1;
-                    break;
-                }
-            }
-            // khong tim thay (kt == 0), tra ve 0
-            if (kt == 0) return 0;
-
-            foreach (ThoiKhoaBieu TKBDuyet in danhSachTKB)
-            {
-                TKBDuyet.DanhSachHocPhan.RemoveAll((hp) => hp.TenHocPhan == TenHPCanHuy);
-            }
-
-            TKBGoc.DanhSachHocPhan.RemoveAll((hp) => hp.TenHocPhan == TenHPCanHuy);
-
-            return 1;
-        }
-
-        // phuong thuc them hoc phan vao tat ca tuan hoc
-        public void ThemHocPhan(ThoiKhoaBieu TKBGoc)
-        {
-            HocPhan HocPhanCanThem = new HocPhan();
-            // nhap thong tin hoc phan can them
-            Console.WriteLine("\n>>> Nhap thong tin hoc phan can them");
-            // phuong thuc nhap hoc phan goi tu lop hoc phan va luu vao doi tuong HocPhanCanThem
-            HocPhanCanThem.NhapHocPhan();
-
-            foreach (ThoiKhoaBieu TKBDuyet in danhSachTKB)
-            {
-                TKBDuyet.DanhSachHocPhan.Add(HocPhanCanThem);
-            }
-
-            TKBGoc.DanhSachHocPhan.Add(HocPhanCanThem);
         }
     }
 }
