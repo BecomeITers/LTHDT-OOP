@@ -71,7 +71,7 @@ namespace TKB
             for (int i = 1; i < n; i++)
             {
                 danhSachTKB[i - 1].SaoLuu(TKBTruoc);
-                TKBTruoc.SaoLuu(TKBTiep);
+                danhSachTKB[i - 1].SaoLuu(TKBTiep);
 
                 // cap nhat ngay bat dau, ket thuc tuan hoc tiep theo
                 TKBTiep.NgayBatDau = TKBTruoc.NgayBatDau.AddDays(7);
@@ -84,6 +84,7 @@ namespace TKB
                 danhSachTKB.Add(TKBTiep);
 
                 TKBTiep = new ThoiKhoaBieu();
+                TKBTruoc = new ThoiKhoaBieu();
             }
         }
 
@@ -97,9 +98,9 @@ namespace TKB
             {
                 try
                 {
-                    TuanHoc = Convert.ToInt32(Console.ReadLine());
+                   TuanHoc = Convert.ToInt32(Console.ReadLine());
 
-                    if (TuanHoc <= 0) throw new Exception();
+                   if (TuanHoc <= 0) throw new Exception();
                 }
                 catch (Exception)
                 {
@@ -136,9 +137,9 @@ namespace TKB
                 break;
             }
 
-            DanhSachTKB[TuanHocInput - 1].ChinhSuaTKB();
+            danhSachTKB[TuanHocInput - 1].ChinhSuaTKB();
         }
-        public int InTKBTheoTuan(int DoRongOInput)
+        public int InTKBTheoTuan(int DoRongOInput) 
         {
             // mang luu cac tuan hoc duoi dang chuoi, phuc vu cho phuong thuc Split()
             string[] MangTuanHoc;
@@ -201,8 +202,7 @@ namespace TKB
                                 }
                             }
                         }
-                    }
-                    else
+                    } else
                     {
                         try
                         {
@@ -258,12 +258,12 @@ namespace TKB
             Console.Write(">>> Ket thuc in");
             return HangSaoLuu + 1;
         }
-        // bơ-phẹc
+        // phuong thuc huy hoc phan o tat ca cac tuan hoc
         public int HuyHocPhan(ThoiKhoaBieu TKBGoc)
         {
             string TenHPCanHuy = "";
             Console.Write("\n>>> Nhap ten hoc phan muon huy: ");
-            TenHPCanHuy = Console.ReadLine();
+            TenHPCanHuy =  Console.ReadLine();
 
             // tim xem hoc phan can huy co nam trong thoi khoa bieu khong
             int kt = 0;
@@ -288,7 +288,7 @@ namespace TKB
             return 1;
         }
 
-        // !!! phuong thuc ThemHocPhan chua duoc test !!!
+        // phuong thuc them hoc phan vao tat ca tuan hoc
         public void ThemHocPhan(ThoiKhoaBieu TKBGoc)
         {
             HocPhan HocPhanCanThem = new HocPhan();
