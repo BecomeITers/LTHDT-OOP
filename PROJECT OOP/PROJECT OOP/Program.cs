@@ -1,4 +1,4 @@
-﻿using GiangVien_SinhVien;
+using GiangVien_SinhVien;
 using PROJECT_OOP;
 using ShutdownApp;
 using System;
@@ -62,9 +62,23 @@ namespace TKB
                             Console.WriteLine("9: Quay lai menu chinh");
                             Console.WriteLine("==============================");
 
-                            Console.Write("chon phuong an: ");
-                            int subChoose = int.Parse(Console.ReadLine());
+                            Console.Write("Chon phuong an: ");
+                            int subChoose;
+                            while (true)
+                            {
+                                try
+                                {
+                                    subChoose = int.Parse(Console.ReadLine());
+                                }
+                                catch (Exception)
+                                {
+                                    Console.Write("!!! Vui long chon lai phuong an: ");
+                                    continue;
+                                }
 
+                                break;
+                            }
+                            
                             switch (subChoose)
                             {
                                 case 1:
@@ -94,7 +108,7 @@ namespace TKB
 
                                 case 3:
                                     try
-                                    {
+                                    {   
                                         int VTChuot1 = QLTKB.InTKBTheoTuan(DoRongO);
                                         Console.SetCursorPosition(0, VTChuot1);
                                         Console.Clear();
@@ -128,12 +142,10 @@ namespace TKB
                                     if (kt_GiaTriTraVe == 1)
                                     {
                                         Console.WriteLine("### Hoc phan da huy!");
-                                    }
-                                    else
-                                    {
+                                    } else {
                                         Console.WriteLine("!!! Khong ton tai hoc phan trong thoi khoa bieu!");
                                     }
-
+                                    
                                     break;
 
                                 case 7:
@@ -156,7 +168,7 @@ namespace TKB
                                     break;
 
                                 default:
-                                    Console.WriteLine("Vui long nhap lai");
+                                    Console.WriteLine("!!! Vui long nhap lai");
                                     break;
                             }
 
