@@ -336,6 +336,7 @@ namespace TKB
                     if (Tu != "!")
                     {
                         DanhSachTu[i].Add(Tu);
+                        ChieuDaiChuoi += Tu.Length + 1;
                     }
                 }
             }
