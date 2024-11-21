@@ -19,3 +19,10 @@ E:\LTHDT-OOP\PROJECT OOP\PROJECT OOP\obj\Debug\PROJECT OOP.csproj.AssemblyRefere
 E:\LTHDT-OOP\PROJECT OOP\PROJECT OOP\obj\Debug\PROJECT OOP.csproj.CoreCompileInputs.cache
 E:\LTHDT-OOP\PROJECT OOP\PROJECT OOP\obj\Debug\PROJECT OOP.exe
 E:\LTHDT-OOP\PROJECT OOP\PROJECT OOP\obj\Debug\PROJECT OOP.pdb
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\test\LTHDT-OOP-TKBSV\PROJECT OOP\PROJECT OOP\bin\Debug\PROJECT OOP.exe.config
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\test\LTHDT-OOP-TKBSV\PROJECT OOP\PROJECT OOP\bin\Debug\PROJECT OOP.exe
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\test\LTHDT-OOP-TKBSV\PROJECT OOP\PROJECT OOP\bin\Debug\PROJECT OOP.pdb
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\test\LTHDT-OOP-TKBSV\PROJECT OOP\PROJECT OOP\obj\Debug\PROJECT OOP.csproj.AssemblyReference.cache
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\test\LTHDT-OOP-TKBSV\PROJECT OOP\PROJECT OOP\obj\Debug\PROJECT OOP.csproj.CoreCompileInputs.cache
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\test\LTHDT-OOP-TKBSV\PROJECT OOP\PROJECT OOP\obj\Debug\PROJECT OOP.exe
+C:\Users\khoat\Documents\HOC\LTHDT\Do an\test\LTHDT-OOP-TKBSV\PROJECT OOP\PROJECT OOP\obj\Debug\PROJECT OOP.pdb

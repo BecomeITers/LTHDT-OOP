@@ -205,6 +205,16 @@ namespace TKB
         /// Hàm chỉnh sửa học phần
         public void ChinhSuaHocPhan()
         {
+            /*
+            if (this != null)
+            {
+                
+            }
+            else
+            {
+                Console.WriteLine("!!! Khong tim thay hoc phan.");
+            }
+            */
             int kt = 0;
             while (true)
             {

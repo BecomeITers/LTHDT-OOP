@@ -1,0 +1,324 @@
+Thong tin sinh vien: 
+23162001
+Nguyen Van A
+12 / 12 / 2005
+nam
+23162A
+2023
+
+
+12 / 09 / 2024
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+Hoc Phan mot
+hp1001
+Thong tin giang vien: 
+gv10001
+Tran Thi B
+02 / 02 / 2000
+nu
+khoa hoc ung dung
+A123
+2
+3
+0
+
+Du lieu hoc phan thu 2:
+Hoc Phan hai
+hp2001
+Thong tin giang vien: 
+gv20001
+Truong Van C
+20 / 12 / 1999
+nam
+cong nghe thong tin
+B202
+4
+2
+0
+
+Du lieu hoc phan thu 3:
+Hoc Phan ba
+hp3001
+Thong tin giang vien: 
+gv30001
+Nguyen Thi D
+03 / 02 / 1992
+nu
+cong nghe thong tin
+B204
+3
+3
+4
+
+Thong tin sinh vien: 
+2311234
+sdfvb uedf
+12 / 12 / 2005
+nam
+á54
+234
+
+
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+Thong tin sinh vien: 
+2345
+erth erfg
+12 / 12 / 2005
+fgg
+1234
+234
+
+
+09 / 09 / 2005
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+werfg werfg werfg
+234rfde
+Thong tin giang vien: 
+2345
+werf wer wer
+12 / 12 / 2000
+nam
+eferfg erfg
+a123
+2
+3
+0
+
+Thong tin sinh vien: 
+234
+fg wedfg ergh
+12 / 12 / 2005
+nam
+5432
+123
+
+
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+hgtre gfre gfre
+3erf
+Thong tin giang vien: 
+543
+werf edf wef
+12 / 12 / 2000
+nam
+hgfrde gfe
+a123
+2
+3
+0
+
+Thong tin sinh vien: 
+2345
+wer werfg
+12 / 12 / 2005
+nam
+23rf
+123
+
+
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+erfg edf
+34rtg
+Thong tin giang vien: 
+234
+werfg wef  ef
+12 / 12 / 2000
+nam
+gfd gbvfd 
+a123
+3
+2
+0
+
+Thong tin sinh vien: 
+Thong tin sinh vien: 
+1234
+wdfg wergh
+12 / 12 / 2005
+efg
+345
+1234
+
+
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+efg er
+123erf
+Thong tin giang vien: 
+2345
+wef ger 
+12 / 12 / 2000
+dfg
+dfg
+a12
+3
+2
+0
+
+Thong tin sinh vien: 
+Thong tin sinh vien: 
+234
+wdf wedfg
+12 / 12 / 2005
+dfg
+23er
+1234
+
+
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+wertg wefg
+234rf
+Thong tin giang vien: 
+34565
+bgfe gf
+12 / 12 / 2000
+nam
+erhm
+3rf
+3
+2
+0
+
+Du lieu hoc phan thu 2:
+Thong tin sinh vien: 
+23162044
+Thong tin sinh vien: 
+23162001
+dfghn
+12 / 12 / 2005
+nam
+234ts
+123
+
+
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+efg wefg
+123e
+Thong tin giang vien: 
+1234
+wedf werf wer
+12 / 12 / 2000
+nu
+wedf edf
+a123
+2
+3
+0
+
+Du lieu hoc phan thu 2:
+wedrf gedf wedf
+wer43
+Thong tin giang vien: 
+234
+awerf df
+09 / 02 / 1999
+nam
+sdfg dfg
+b213
+3
+2
+0
+
+dfg df
+34rfd
+Thong tin giang vien: 
+343fv
+edrfg erf ef
+12 / 12 / 1998
+nam
+wedf edf wedf
+v123
+5
+2
+3
+Thong tin sinh vien: 
+Thong tin sinh vien: 
+Thong tin sinh vien: 
+23345
+rfg rfg
+12 / 12 / 2005
+nam
+234
+23
+
+
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+Lap Trinh Lap Trinh Lap Trinh Lap Trinh
+2345t
+Thong tin giang vien: 
+34rt
+edf edf gedrfg werf erg
+12 / 12 / 2000
+nam
+rtgfderg
+23eds
+3
+2
+1
+
+Thong tin giang vien: 
+34rtgf
+Nguyen Van ABC DEF GHI
+12 / 12 / 2000
+nam
+dfg
+Thong tin sinh vien: 
+2345
+fg df
+12 / 12 / 2005
+nam
+2023
+2023
+
+
+09 / 09 / 2024
+Du lieu hoc phan thu 1:
+Toan mot hai ba
+4rf
+Thong tin giang vien: 
+34rf
+Nguyen Van B
+12 / 12 / 2000
+nam
+edfg
+A123
+2
+3
+1
+
+Du lieu hoc phan thu 2:
+Lap Trinh Lap Trinh Lap Trinh Lap Trinh Lap Trinh
+45r
+Thong tin giang vien: 
+45yuj
+Tran Phuong C
+10 / 02 / 1999
+nu
+fgytr
+A123
+2
+4
+4
+
+Du lieu hoc phan thu 3:
+Kinh te Chinh tri
+5tgf
+Thong tin giang vien: 
+98yhj
+Nguyen Hoai D
+03 / 03 / 1998
+nam
+erfgg df
+B202
+6
+2
+4
+

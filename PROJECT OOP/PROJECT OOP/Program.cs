@@ -1,4 +1,4 @@
-using GiangVien_SinhVien;
+﻿using GiangVien_SinhVien;
 using PROJECT_OOP;
 using ShutdownApp;
 using System;
@@ -38,6 +38,7 @@ namespace TKB
                 Console.WriteLine("1: Quan Ly Thoi Khoa Bieu");
                 Console.WriteLine("2: In Thoi Khoa Bieu co san");
                 Console.WriteLine("3: Ket thuc chuong trinh");
+                Console.WriteLine("4: Ket thuc chuong trinh va tat nguon may tinh");
                 Console.WriteLine("==================");
 
                 Console.Write("chon phuong an: ");
@@ -218,6 +219,10 @@ namespace TKB
                         break;
 
                     case 3:
+                        exitMainLoop = true;
+                        break;
+
+                    case 4:
                         KetThuc kt = new KetThuc();
                         kt.TheEnd();
                         break;
